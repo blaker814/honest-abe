@@ -16,6 +16,7 @@ const render = (pacs, corporateDonations) => {
         const donations = corporateDonations.filter(cd => cd.pacId === pac.id)
         return PacHTML(pac, donations)
     }).join("")
+    
     contentTarget.innerHTML += `
         <h2>Corporate Donations</h2>
         ${HTMLRep}
