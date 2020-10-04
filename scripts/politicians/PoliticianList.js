@@ -12,7 +12,7 @@ const render = (politicians) => {
     const contentTarget = document.querySelector("body")
     const HTMLRep = politicians.map(politician => PoliticianHTML(politician)).join("")
 
-    contentTarget.innerHTML = `
+    contentTarget.innerHTML += `
         <h2>Politicians</h2>
         ${HTMLRep}
     `
