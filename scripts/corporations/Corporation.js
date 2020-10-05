@@ -3,7 +3,7 @@ export const CorporationHTML = (corporation) => {
         <article class="corporations">
             <section class="corporation">
                 <header class="corporation__name">
-                    <h1>${corporation.company}</h1>
+                    <h3>${corporation.company}</h3>
                 </header>
                 <div class="corporation__info">
                     <div>Address: ${corporation.address}</div>
